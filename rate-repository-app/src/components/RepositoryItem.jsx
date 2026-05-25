@@ -1,18 +1,18 @@
 import { View, Text, StyleSheet } from 'react-native'
 
-const RepositoryItem = ({ props }) => {
+const RepositoryItem = ({ item }) => {
     return (
         <View>
-            <Text>FullName: {props.fullName}</Text>
-            <Text>Description: {props.description}</Text>
-            <Text>Language: {props.language}</Text>
-            <Text>Stars: {props.stargazersCount}</Text>
-            <Text>Forks: {props.forksCount}</Text>
-            <Text>Reviews: {props.reviewCount}</Text>
-            <Text>Rating: {props.ratingAverage}</Text>
+            <Text>FullName: {item.fullName}</Text>
+            <Text>Description: {item.description}</Text>
+            <Text>Language: {item.language}</Text>
+            <Text>Stars: {item.stargazersCount}</Text>
+            <Text>Forks: {item.forksCount}</Text>
+            <Text>Reviews: {item.reviewCount}</Text>
+            <Text>Rating: {item.ratingAverage}</Text>
         </View>
     )
-}
+}                                               
 
 
 export default RepositoryItem
